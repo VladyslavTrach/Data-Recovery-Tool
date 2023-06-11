@@ -1,0 +1,20 @@
+Date: 2023-06-08 20:55:18		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-08 21:44:40		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr D: C:\ /regular /n *.*
+Date: 2023-06-08 22:01:12		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr D: C:\ /regular /n *.*
+Date: 2023-06-10 23:37:19		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:47:53		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:48:17		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:48:18		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:48:19		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:48:19		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-10 23:48:58		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-11 00:22:14		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-11 00:42:06		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-11 01:01:07		Source: C:\		Destination: D:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr C: D:\ /regular /n *.*
+Date: 2023-06-11 01:40:14		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.jpe /n *.jpeg /n *.jpg /n *.png						Request : winfr D: C:\ /regular /n *.jpe /n *.jpeg /n *.jpg /n *.png
+Date: 2023-06-11 01:41:56		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.jpe /n *.jpeg /n *.jpg /n *.png						Request : winfr D: C:\ /regular /n *.jpe /n *.jpeg /n *.jpg /n *.png
+Date: 2023-06-11 14:23:33		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr D: C:\ /regular /n *.*
+Date: 2023-06-11 14:26:24		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.*						Request : winfr D: C:\ /regular /n *.*
+Date: 2023-06-11 23:53:55		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.jpe /n *.jpeg /n *.jpg /n *.png						Request : winfr D: C:\ /regular /n *.jpe /n *.jpeg /n *.jpg /n *.png
+Date: 2023-06-11 23:56:17		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.jpe /n *.jpeg /n *.jpg /n *.png						Request : winfr D: C:\ /regular /n *.jpe /n *.jpeg /n *.jpg /n *.png
+Date: 2023-06-12 00:04:40		Source: D:\		Destination: C:\		Mode: /regular		Requested Data Types :  /n *.jpe /n *.jpeg /n *.jpg /n *.png						Request : winfr D: C:\ /regular /n *.jpe /n *.jpeg /n *.jpg /n *.png

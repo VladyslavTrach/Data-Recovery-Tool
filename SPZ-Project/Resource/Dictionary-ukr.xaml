@@ -1,0 +1,107 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- _______________ SettingsVM _______________ -->
+    
+    <System:String x:Key="SettingsStr">Налаштування</System:String>
+    <System:String x:Key="LanguageStr" xml:space="preserve"> Мова :</System:String>
+
+    <System:String x:Key="GuideStr">Посібник</System:String>
+    <System:String x:Key="WhichModeToUseStr">Який режим використовувати?</System:String>
+    <System:String x:Key="FileSysStr">Файл. система</System:String>
+    <System:String x:Key="CircumstancesStr">Обставини</System:String>
+    <System:String x:Key="ModeStr">Режим</System:String>
+    <System:String x:Key="DeletedRecStr">Видалено нещодавно</System:String>
+    <System:String x:Key="DelWhileAgoStr">Видалено давно</System:String>
+    <System:String x:Key="AfterFromatDiskStr">Після форматування диска</System:String>
+    <System:String x:Key="CorruptedDiskStr">Пошкоджений диск</System:String>
+    <System:String x:Key="AnyStr">Будь-що</System:String>
+
+    <System:String x:Key="Switch">Команда</System:String>
+    <System:String x:Key="Description">Опис</System:String>
+    <System:String x:Key="SuportedModes">Підтримувані режими</System:String>
+    <System:String x:Key="NTFSMode">Режим NTFS, можливість швидкого відновлення для здорових дисків NTFS за допомогою MFT</System:String>
+    <System:String x:Key="SegmentMode">Сегментний режим, можливість відновлення дисків NTFS з використанням сегментів файлових записів</System:String>
+    <System:String x:Key="SignatureMode">Сигнатурний режим, можливість відновлення для всіх типів файлових систем за допомогою заголовків файлів</System:String>
+    <System:String x:Key="MulTypes">Відновити певні групи розширень, вказаних через кому</System:String>
+    <System:String x:Key="HashMode">Групи розширень режиму підпису та підтримувані типи файлів</System:String>
+    <System:String x:Key="SelectLocation">Зберігає файл журналу операції відновлення у місці, відмінному від місця за замовчуванням на диску відновлення (наприклад, D:\logfile).</System:String>
+    <System:String x:Key="OverridePrompt">Перевизначає підказки користувача, що корисно у файлі скрипта.</System:String>
+    <System:String x:Key="RecycleBinUndo">Відновлює невидалені файли, наприклад, з Кошика.</System:String>
+    <System:String x:Key="RecSysFile">Відновлює системні файли.</System:String>
+    <System:String x:Key="OverriteFile">Вказує, чи потрібно завжди (a), ніколи (n) або зберігати обидва варіанти завжди (b) при виборі перезапису файлу. Типовою дією є запит на перезапис.</System:String>
+    <System:String x:Key="RecWithNoDS">Відновлює файли без первинних потоків даних.</System:String>
+    <System:String x:Key="SlashE">Для того, щоб зберегти результати керованими і зосередитися на користувацьких файлах, деякі типи файлів фільтруються за замовчуванням, але цей перемикач вилучає цей фільтр. Повний список цих типів файлів наведено в документації.</System:String>
+    <System:String x:Key="FilterFT">Вказує, які типи файлів буде відфільтровано. Повний список цих типів файлів наведено в документації.</System:String>
+    <System:String x:Key="SpecifySector">Вказує кількість секторів на пристрої-джерелі. Щоб дізнатися інформацію про сектори, скористайтеся fsutil.</System:String>
+    <System:String x:Key="SpecifyCluster">Вказує розмір кластера (одиницю розподілу) на пристрої-джерелі.</System:String>
+
+
+
+
+
+    <System:String x:Key="AbouDRT">Про Data Recovery</System:String>
+    <System:String x:Key="FDescr">Опис функції</System:String>
+    <System:String x:Key="AFR">Відновлення</System:String>
+    <System:String x:Key="AETUI">Простий у використанні інтерфейс</System:String>
+    <System:String x:Key="AFRD">Data Recovery Tool використовує передові алгоритми для ретельного сканування пристроїв зберігання даних і відновлення широкого спектру типів файлів, включаючи документи, фотографії, відео, аудіофайли та інші.</System:String>
+    <System:String x:Key="AETUID">Наш інтуїтивно зрозумілий і візуально привабливий інтерфейс гарантує, що користувачі зможуть легко орієнтуватися в процесі відновлення. Програма надає покрокові інструкції, що робить її доступною як для початківців, так і для досвідчених користувачів.</System:String>
+    <System:String x:Key="QDScan">Параметри швидкого сканування / глибокого сканування</System:String>
+    <System:String x:Key="QDScanD">Data Recovery Tool пропонує як швидке, так і глибоке сканування. Швидке сканування швидко виявляє нещодавно видалені файли, в той час як глибоке сканування ретельно шукає втрачені дані на всьому накопичувачі, забезпечуючи комплексне відновлення.</System:String>
+    <System:String x:Key="MFSS">Підтримка декількох файлових систем</System:String>
+    <System:String x:Key="MFSSD">Data Recovery Tool підтримує різні файлові системи, включаючи NTFS, FAT32, exFAT і багато інших, забезпечуючи сумісність з широким спектром пристроїв зберігання даних</System:String>
+    <System:String x:Key="AFF">Фільтрування файлів</System:String>
+    <System:String x:Key="AFFD">Користувачі можуть застосовувати фільтри для звуження результатів пошуку, що полегшує пошук конкретних файлів на основі їх типів.</System:String>
+    <System:String x:Key="AGI">Загальна інформація</System:String>
+    <System:String x:Key="ATask">Завдання</System:String>
+    <System:String x:Key="ATaskD">24.  Утиліта відновлення даних (data recovery) на диску комп’ютера з ОС Windows. Розробка програми, що дозволяє відновлювати втрачені дані на комп'ютері.</System:String>
+    <System:String x:Key="APL">Мова</System:String>
+    <System:String x:Key="AAuth">Автор</System:String>
+    <System:String x:Key="AAuthD">Трач Владислав</System:String>
+    <System:String x:Key="KeyFeatures">Основні функції</System:String>
+    <System:String x:Key="Title">Функція</System:String>
+
+    <System:String x:Key="RSource">Джерело :</System:String>
+    <System:String x:Key="RChooseSource">Виберіть диск-джерело :</System:String>
+    <System:String x:Key="RDestination">Призначення :</System:String>
+    <System:String x:Key="RDestinationChoose">Виберіть Призначення:</System:String>
+    <System:String x:Key="RRegMode">Звичайний</System:String>
+    <System:String x:Key="RExtMode">Розширений</System:String>
+    <System:String x:Key="RSelectFormats">Виберіть формат :</System:String>
+    <System:String x:Key="RImage">Зображення :</System:String>
+    <System:String x:Key="RVideo">Відео :</System:String>
+    <System:String x:Key="RDoc">Документи :</System:String>
+    <System:String x:Key="RRD">Відновити дані</System:String>
+    <System:String x:Key="RAR">Проф. режим</System:String>
+
+    <System:String x:Key="MRD">Відновлення</System:String>
+    <System:String x:Key="MSH">Налаштування</System:String>
+    <System:String x:Key="MAP">Про програму</System:String>
+    <System:String x:Key="ASL">Підтримувані локалізації</System:String>
+
+    <System:String x:Key="AMultiLoc">Багатомовний інтерфейс</System:String>
+    <System:String x:Key="AMultiLocDescr">Програма підтримує дві мови : Англійську і Українську</System:String>
+
+    <System:String x:Key="TTAM">Відновлення даних в просунутому режимі</System:String>
+    <System:String x:Key="TTDM">Відновлення даних у стандартному режимі</System:String>
+    <System:String x:Key="TTSF">Якщо не вибрана жодна опція, програма відновлюватиме всі типи файлів</System:String>
+    <System:String x:Key="TTCD">Виберіть, куди відновлюватимуться файли</System:String>
+    <System:String x:Key="TTCS">Виберіть диск, звідки відновлювати файли</System:String>
+    <System:String x:Key="OpenLink">Відкрити деталізовану документацію</System:String>
+    <System:String x:Key="AdvSyntax">Синтаксис продвинутого режиму</System:String>
+    <System:String x:Key="DWFRMS">Завантажити WFR з MS Store</System:String>
+
+    <System:String x:Key="SCD" xml:space="preserve">Виберіть диск : </System:String>
+    <System:String x:Key="Drive" xml:space="preserve">Диск : </System:String>
+    <System:String x:Key="FileSystem" xml:space="preserve">Файл. система : </System:String>
+    <System:String x:Key="Size" xml:space="preserve">Розмір : </System:String>
+    <System:String x:Key="FreeSpace">Вільне місце :</System:String>
+    <System:String x:Key="OccSpace">Зайняте місце :</System:String>
+    <System:String x:Key="OccPer">Зайнятість диску :</System:String>
+    <System:String x:Key="VolumeName" xml:space="preserve">Назва диску : </System:String>
+    <System:String x:Key="DiskInfo">Диски</System:String>
+    <System:String x:Key="IsWFRInst">Статус WFR :</System:String>
+    <System:String x:Key="OpenMS">Натисніть щоб відкрити Microsoft Store</System:String>
+
+</ResourceDictionary>

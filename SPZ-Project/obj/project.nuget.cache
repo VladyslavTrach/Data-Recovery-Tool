@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xt2e9moPU3N7zcQju+yM8JyN5HZWn7kDq6Hnu4XexEsndN4TwhntfJOA8vv7Aysm5gCzK03N/p0Qp+Wr/B139w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vlad0\\source\\repos\\C#\\SPZ-Project\\SPZ-Project\\SPZ-Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vlad0\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\vlad0\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\vlad0\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\vlad0\\.nuget\\packages\\system.management\\7.0.1\\system.management.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

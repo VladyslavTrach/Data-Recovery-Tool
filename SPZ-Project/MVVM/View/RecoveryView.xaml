@@ -1,0 +1,270 @@
+﻿<UserControl x:Class="SPZ_Project.MVVM.View.RecoveryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SPZ_Project.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="470" d:DesignWidth="720"
+             Background="White">
+    <UserControl.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="RoundedButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border BorderBrush="Black"
+                    Grid.Row="0"
+                        Grid.Column="0"
+                    BorderThickness="1">
+                <StackPanel 
+                        Margin="0,20">
+
+                    <Label Name="Sourcelabel"
+                           Content="{DynamicResource RChooseSource}"
+                       Width="200"
+                       Height="30"
+                       Margin="0,20,0,10"
+                       FontSize="16"
+                       Background="LightGray">
+
+                    </Label>
+
+                    <ComboBox FontSize="16" x:Name="diskComboBox" Width="200" Height="30" SelectedIndex="0" SelectionChanged="DiskComboBox_SelectionChanged">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+
+                        <ComboBox.ToolTip>
+                            <ToolTip Background="LightGray" Foreground="Black" FontSize="12">
+                                <TextBlock Text="{DynamicResource TTCS}"/>
+                            </ToolTip>
+                        </ComboBox.ToolTip>
+                    </ComboBox>
+
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="0"
+                    Grid.Column="1"
+                    BorderBrush="Black"
+                    BorderThickness="1">
+                <StackPanel 
+                        
+                        Margin="0,20">
+
+                    <Label Name="Destinationlabel"
+                           Content="{DynamicResource RDestination}"
+                       Width="200"
+                       Height="30"
+                       Margin="0,20,0,10"
+                       FontSize="16"
+                       Background="LightGray">
+
+                    </Label>
+
+                    <Button Style="{DynamicResource RoundedButtonStyle}" x:Name ="ChooseDestinationButton"
+                        Content="{DynamicResource RDestinationChoose}"
+                        Height="30"
+                        Width="150"
+                        Background="CadetBlue" Click="ChooseDestinationButton_Click" FontFamily="Meiryo UI">
+
+                        <Button.ToolTip>
+                            <ToolTip Background="LightGray" Foreground="Black" FontSize="12">
+                                <TextBlock Text="{DynamicResource TTCD}"/>
+                            </ToolTip>
+                        </Button.ToolTip>
+
+                    </Button>
+
+
+                </StackPanel>
+            </Border>
+
+
+            <Border Grid.Row="0"
+                    Grid.Column="2"
+                    BorderBrush="Black"
+                    BorderThickness="1">
+                <StackPanel 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="0,0,20,0">
+
+                    <RadioButton x:Name="RegMode"
+                             Content="{DynamicResource RRegMode}"
+                             FontSize="20"
+                             IsChecked="True"
+                             Background="LightGray" Checked="RegMode_Checked"
+                                 Height="50">
+
+                    </RadioButton>
+
+                    <RadioButton x:Name="ExtMode"
+                             Content="{DynamicResource RExtMode}"
+                             FontSize="20"
+                             Background="LightGray" Checked="ExtMode_Checked"
+                                 Height="50">
+
+                    </RadioButton>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Border BorderBrush="Black"
+                BorderThickness="1">
+            <Grid Name="CheckBoxGrid" Height="250"
+              Width="700"
+              Background="WhiteSmoke"
+              HorizontalAlignment="Center">
+                <Label Content ="{DynamicResource RSelectFormats}" 
+                   HorizontalAlignment="Center"
+                   FontSize="25" FontFamily="Meiryo UI">
+
+                    <Label.ToolTip>
+                        <ToolTip Background="LightGray" Foreground="Black" FontSize="12">
+                            <TextBlock Text="{DynamicResource TTSF}"/>
+                        </ToolTip>
+                    </Label.ToolTip>
+
+                </Label>
+                
+                
+                <Label Content ="{DynamicResource RImage}" Margin="20,40,0,0" FontFamily="Meiryo UI"/>
+                <CheckBox Name="CBjpg" Content=".jpg" Margin="20, 80,0,0"/>
+                <CheckBox Name="CBjpeg" Content=".jpeg" Margin="20, 100,0,0"/>
+                <CheckBox Name="CBjpe" Content=".jpe" Margin="20, 120,0,0"/>
+                <CheckBox Name="CBpng" Content=".png" Margin="20, 140,0,0"/>
+
+
+                <Label Content ="{DynamicResource RVideo}" Margin="320,40,0,0" HorizontalAlignment="Left" FontFamily="Meiryo UI"/>
+                <CheckBox Name="CBmp3" Content=".mp3" Margin="320, 80,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBmp4" Content=".mp4" Margin="320, 100,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBmpeg" Content=".mpeg" Margin="320, 120,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBmpg" Content=".mpg" Margin="320, 140,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBm4a" Content=".m4a" Margin="320, 160,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBmov" Content=".mov" Margin="320, 180,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBwma" Content=".wma" Margin="320, 200,0,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBwmv" Content=".wmv" Margin="320, 220,0,0" HorizontalAlignment="Left"/>
+
+
+                <Label Content ="{DynamicResource RDoc}" Margin="610,40,10,0" HorizontalAlignment="Left" FontFamily="Meiryo UI"/>
+                <CheckBox Name="CBpdf" Content=".pdf" Margin="620, 80,10,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBodf" Content=".odf" Margin="620, 100,10,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBdoc" Content=".doc" Margin="620, 120,10,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBdocx" Content=".docx" Margin="620, 140,10,0" HorizontalAlignment="Left"/>
+                <CheckBox Name="CBzip" Content=".zip" Margin="620, 160,10,0" HorizontalAlignment="Left"/>
+
+            </Grid>
+        </Border>
+
+
+        <Border BorderBrush="Black"
+                BorderThickness="1">
+            <Grid Background="WhiteSmoke" Height="100">
+                <Button Style="{DynamicResource RoundedButtonStyle}" x:Name ="RestoreDataButton"
+                        Content="{DynamicResource RRD}"
+                        Height="50"
+                        Width="200"
+                        Background="#00802A"
+                        Margin="0,15,0,0" Click="RestoreDataButton_Click"
+                        VerticalAlignment="Top" FontFamily="Meiryo UI">
+
+                    <Button.ToolTip>
+                        <ToolTip Background="LightGray" Foreground="Black" FontSize="12">
+                            <TextBlock Text="{DynamicResource TTDM}"/>
+                        </ToolTip>
+                    </Button.ToolTip>
+
+                </Button>
+
+                <Button Style="{DynamicResource RoundedButtonStyle}" x:Name ="RestoreManualDataButton"
+                        Content="{DynamicResource RAR}"
+                        Height="50"
+                        Width="100"
+                        Background="#806A00"
+                        Margin="0,15,20,0" Click="RestoreManualDataButton_Click"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right" 
+                        FontSize="12" FontFamily="Meiryo UI">
+
+                    <Button.ToolTip>
+                        <ToolTip Background="LightGray" Foreground="Black" FontSize="12">
+                            <TextBlock Text="{DynamicResource TTAM}"/>
+                        </ToolTip>
+                    </Button.ToolTip>
+
+                </Button>
+            </Grid>
+        </Border>
+    </StackPanel>
+</UserControl>

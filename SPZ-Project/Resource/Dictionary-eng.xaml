@@ -1,0 +1,96 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- _______________ SettingsVM _______________ -->
+
+    <System:String x:Key="SettingsStr">Settings</System:String>
+    <System:String x:Key="LanguageStr" xml:space="preserve"> Language :</System:String>
+    <System:String x:Key="GuideStr">Guide</System:String>
+    <System:String x:Key="WhichModeToUseStr">Which Mode to use?</System:String>
+    <System:String x:Key="FileSysStr">File System</System:String>
+    <System:String x:Key="CircumstancesStr">Circumstances</System:String>
+    <System:String x:Key="ModeStr">Mode</System:String>
+    <System:String x:Key="DeletedRecStr">Deleted recently</System:String>
+    <System:String x:Key="DelWhileAgoStr">Deleted a while ago</System:String>
+    <System:String x:Key="AfterFromatDiskStr">After formatting a disk</System:String>
+    <System:String x:Key="CorruptedDiskStr">A corrupted disk</System:String>
+    <System:String x:Key="AnyStr">Any</System:String>
+    <System:String x:Key="KeyFeatures">Key Features</System:String>
+    <System:String x:Key="Title">Title</System:String>
+    <System:String x:Key="Switch">Switch</System:String>
+    <System:String x:Key="Description">Description</System:String>
+    <System:String x:Key="SuportedModes">Supported modes</System:String>
+    <System:String x:Key="NTFSMode">NTFS mode, a fast recovery option for healthy NTFS drives using the master file table</System:String>
+    <System:String x:Key="SegmentMode">Segment mode, recovery option for NTFS drives using file record segments</System:String>
+    <System:String x:Key="SignatureMode">Signature mode, recovery option for all file system types using file headers</System:String>
+    <System:String x:Key="SCD" xml:space="preserve">Select Disk : </System:String>
+    <System:String x:Key="MulTypes">Recover specific extension groups, comma separated</System:String>
+    <System:String x:Key="HashMode">Signature mode extension groups and supported file types.</System:String>
+    <System:String x:Key="SelectLocation">Saves a log file of the recovery operation in a different location than the default location on the recovery drive (for example, D:\logfile).</System:String>
+    <System:String x:Key="Drive" xml:space="preserve">Drive : </System:String>
+    <System:String x:Key="IsWFRInst">WFR Status :</System:String>
+    <System:String x:Key="OverridePrompt">Overrides user prompts, which is useful in a script file.</System:String>
+    <System:String x:Key="RecycleBinUndo">Recovers undeleted files, for example, from the Recycle Bin.</System:String>
+    <System:String x:Key="RecSysFile">Recovers system files.</System:String>
+    <System:String x:Key="VolumeName" xml:space="preserve">Volume Name : </System:String>
+    <System:String x:Key="OverriteFile">Specifies whether to always (a), never (n), orkeep both always(b) when choosing whether to overwrite a file. The default action is to prompt to overwrite.</System:String>
+    <System:String x:Key="MRD">Recover Data</System:String>
+    <System:String x:Key="RecWithNoDS">Recovers files without primary data streams.</System:String>
+    <System:String x:Key="MSH">Settings</System:String>
+    <System:String x:Key="DiskInfo">Disk Info</System:String>
+    <System:String x:Key="SlashE">To keep your results manageable and focus on user files, some file types are filtered by default, but this switch removes that filter. For a complete list of these file types, see the information after this table.</System:String>
+    <System:String x:Key="FileSystem" xml:space="preserve">File System : </System:String>
+    <System:String x:Key="FilterFT">Specifies which file types are filtered. For a complete list of these file types, see the information after this table.</System:String>
+    <System:String x:Key="MAP">About</System:String>
+    <System:String x:Key="SpecifySector">Specifies the number of sectors on the source device. To find sector information, use fsutil.</System:String>
+    <System:String x:Key="SpecifyCluster">Specifies the cluster size (allocation unit) on the source device.</System:String>
+    <System:String x:Key="AbouDRT">About Data Recovery</System:String>
+    <ClickMode x:Key="Settings">Release</ClickMode>
+    <System:String x:Key="FDescr">Feature Decsription</System:String>
+    <System:String x:Key="AFR">File Recovery</System:String>
+    <System:String x:Key="AETUI">Easy-to-Use Interface</System:String>
+    <System:String x:Key="AFRD">Data Recovery Tool employs advanced algorithms to scan storage devices thoroughly and recover a wide range of file types, including documents, photos, videos, audio files, and more</System:String>
+    <System:String x:Key="Size" xml:space="preserve">Size : </System:String>
+    <System:String x:Key="AETUID">Our intuitive and visually appealing user interface ensures that users can navigate the recovery process effortlessly. The program provides step-by-step guidance, making it accessible to both novice and experienced users.</System:String>
+    <System:String x:Key="QDScan">Quick Scan / Deep Scan Options</System:String>
+    <System:String x:Key="FreeSpace">Free Space :</System:String>
+    <System:String x:Key="QDScanD">Data Recovery Tool offers both quick and deep scan options. The quick scan quickly identifies recently deleted files, while the deep scan thoroughly searches for lost data in the entire storage device, ensuring a comprehensive recovery.</System:String>
+    <System:String x:Key="MFSS">Support for Multiple File Systems</System:String>
+    <System:String x:Key="MFSSD">Data Recovery Tool supports various file systems, including NTFS, FAT32, exFAT, and more, ensuring compatibility with a wide range of storage devices</System:String>
+    <System:String x:Key="OccSpace">Occupied Space :</System:String>
+    <System:String x:Key="AFF">File Filtering</System:String>
+    <System:String x:Key="AFFD">Users can apply filters to narrow down search results, making it easier to locate specific files based on file types.</System:String>
+    <System:String x:Key="AGI">General Info</System:String>
+    <System:String x:Key="ATask">Task</System:String>
+    <System:String x:Key="OccPer">Disk Occupancy:</System:String>
+    <System:String x:Key="ATaskD">24. A utility for recovering data on a Windows computer disk. Development of a program that allows you to recover lost data on your computer.</System:String>
+    <System:String x:Key="APL">Programming Language</System:String>
+    <System:String x:Key="AAuth">Author</System:String>
+    <System:String x:Key="AAuthD">Trach Vladyslav</System:String>
+    <System:String x:Key="RSource">Source :</System:String>
+    <System:String x:Key="RChooseSource">Choose Source :</System:String>
+    <System:String x:Key="RDestination">Destination :</System:String>
+    <System:String x:Key="RDestinationChoose">Choose Destination :</System:String>
+    <System:String x:Key="RRegMode">Regular</System:String>
+    <System:String x:Key="RExtMode">Extensive</System:String>
+    <System:String x:Key="RSelectFormats">Select formats :</System:String>
+    <System:String x:Key="RImage">Image :</System:String>
+    <System:String x:Key="TTCS">Please select DISK!</System:String>
+    <System:String x:Key="RVideo">Video :</System:String>
+    <System:String x:Key="RDoc">Documents :</System:String>
+    <System:String x:Key="RRD">Restore Data</System:String>
+    <System:String x:Key="RAR">Advanced mode</System:String>
+    <System:String x:Key="ASL">Supported localizations</System:String>
+    <System:String x:Key="AMultiLoc">Multilang Interface</System:String>
+    <System:String x:Key="AMultiLocDescr">Program supports two localizations : English and Ukrainian</System:String>
+    <System:String x:Key="TTAM">Recover data in Advanced mode</System:String>
+    <System:String x:Key="TTDM">Recover data in Default mode</System:String>
+    <System:String x:Key="TTSF">If no option is selected, the program will recover all file types</System:String>
+    <System:String x:Key="TTCD">Select where to recover files</System:String>
+    <System:String x:Key="OpenLink">Open detailed Documentation</System:String>
+    <System:String x:Key="AdvSyntax">Advanced syntax</System:String>
+    <System:String x:Key="DWFRMS">Download WFR from MS Store</System:String>
+    <System:String x:Key="OpenMS">Press to Open Microsoft Store</System:String>
+    
+</ResourceDictionary>
